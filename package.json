@@ -1,0 +1,25 @@
+{
+  "name": "react-portal-func",
+  "version": "1.0.1",
+  "description": "functionalize the component in portal",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c ./scripts/config.js"
+  },
+  "author": "tjyuanpeng",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-uglify": "^5.0.2",
+    "uglify-js": "^3.4.9"
+  }
+}
