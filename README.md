@@ -10,24 +10,24 @@ import React from 'react';
 import { Button, Modal } from 'antd';
 import wrap from 'react-portal-func';
 export default ({ title }) => {
-    let tt = title;
+    let _title_ = title;
     let visible = true;
 
-    return wrap((resolve, reject, render) => (
-        <Modal title={tt} visible={visible}
+    return wrap(({resolve, reject, render}) => (
+        <Modal title={_title_} visible={visible}
             onOk={() => {
                 visible = false;
                 resolve(true);
             }}
             onCancel={() => {
                 visible = false;
-                resolve(false); // resolve & reject just call render func inside.
+                resolve(false); // resolve & reject just call 'render' inside.
             }}
         >
             <p>Some contents...</p>
             <Button
                 onClick={() => {
-                    tt = 'react-portal-func';
+                    _title_ = 'react-portal-func';
                     render();  // re-render the component
                 }}
             >
